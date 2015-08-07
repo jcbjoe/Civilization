@@ -1,0 +1,53 @@
+name: Civilization
+main: me.jcbjoe.Civilization.Main
+author: jcbjoe
+version: 1.0
+description: A whole new claiming system
+softdepend: [Vault]
+
+commands:
+  civilization:
+    description: Civilization main command.
+    permission-message: You do not have permission to use this!
+    usage: /civilization help
+    
+
+permissions:
+  civilization.player:
+    description: General Permissions for a Player.
+    default: op
+    children:
+      civilization.claim: true
+      civilization.unclaim: true
+      civilization.trust: true
+      civilization.unclaimall: true
+      civilization.untrust: true
+  civilization.admin:
+    description: General Permissions for a Admin.
+    default: op
+    children:
+      civilization.override: true
+  civilization.claim:
+    description: Permission to claim a chunk.
+    default: op
+  civilization.unclaim:
+    description: Permission to unclaim a chunk.
+    default: op
+  civilization.trust:
+    description: Permission to trust a player in your chunk.
+    default: op
+  civilization.unclaimall:
+    description: Permission to unclaims all your claimed chunks.
+    default: op
+  civilization.untrust:
+    description: Permission to untrust a player in your chunk.
+    default: op
+  civilization.flag:
+    description: Permission to add flags to you chunk.
+    default: op
+  civilization.info:
+    description: Permission to see a chunks info.
+    default: op
+  civilization.override:
+    description: Permission to build in any claim.
+    default: op

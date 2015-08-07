@@ -1,0 +1,13 @@
+# Chunk multiplier - increment in price per chunk bought in percentage. set to 0 to have no increase
+Chunk multiplier: '5'
+# Cost of chunk
+Chunk cost: 1000
+# Increase price depending on about of plots?
+Increase price: true
+# percantage to increase by
+Percentage increase: 2
+# changing max chunks price
+Extra Chunks Cost:
+# Chunk permissions - amount of chunks allowed per rank. Configured in 5 increments for normal players with pex, and for players with op it is infinite
+ranks:
+  default: 5
